@@ -15,8 +15,8 @@ int main(int argv, char **argc)
         } else if (argv > 4)
             std::cerr << "Warning: last " << argv - 4 << " arguments will be ignored" << std::endl;
 
-        int N = atoi(argc[1]);
-        int seed = atoi(argc[2]);
+        int seed = atoi(argc[1]);
+        int N = atoi(argc[2]);
         double resize_by = atof(argc[3]);
 
         if(N < 1)
