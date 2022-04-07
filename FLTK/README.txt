@@ -19,5 +19,4 @@ REQUIREMENTS
 
 The following modules are required:
 
-*[FLTK]
-(https://www.fltk.org/software.php)
+*[FLTK] (https://www.fltk.org/software.php)

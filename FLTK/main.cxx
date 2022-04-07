@@ -11,7 +11,7 @@ int main(int argv, char **argc)
 {
     try {
         if(argv < 4) {
-            throw("Error: not enough arguments (number of buttons - seed - multiplier)");
+            throw("Error: not enough arguments (seed - N number (NxN buttons) - multiplier)");
         } else if (argv > 4)
             std::cerr << "Warning: last " << argv - 4 << " arguments will be ignored" << std::endl;
 
