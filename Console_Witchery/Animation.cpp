@@ -8,6 +8,16 @@ int Phase::getValue()
     return curphase;
 }
 
+int Phase::getmin()
+{
+    return minphase;
+}
+
+int Phase::getmax()
+{
+    return maxphase;
+}
+
 int AnimatedImage::getx()
 {
     return xsize;
@@ -38,6 +48,11 @@ void Phase::next()
     }
 }
 
+void Phase::inverse()
+{
+    up = !up;
+}
+
 bool Phase::inc()
 {
     return up;
@@ -45,12 +60,11 @@ bool Phase::inc()
 
 void AnimatedImage::addImage(const char **img)
 {
-    images.insertAtEnd(img);
+    images.push_back(img);
 }
 
 const char **AnimatedImage::getImage()
 {
-    std::cout << "CUR PHASE IS " << (int) phase << std::endl;
     return images[phase];
 }
 
