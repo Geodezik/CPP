@@ -1,7 +1,7 @@
 #ifndef IMAGESCOLLECTION_H
 #define IMAGESCOLLECTION_H
 
-//this is a file with the greatest pieces of art on the Earth (NO)
+//this is a file with the greatest pieces of art on the Earth (maybe)
 
 namespace images_collection {
     const char *witch1[46] = {
